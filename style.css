@@ -1,0 +1,618 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+	transition: all .2s linera;
+	font-family: 'Exo 2', sans-serif;
+}
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body{
+	overflow-x: hidden ;
+	height: 2000px;
+}
+
+/*********************************************** header section starts ***************************************/
+#header{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		padding: 1rem 4rem;
+		background: #fff;
+		box-shadow: 0 .1rem .3rem #999;
+		z-index: 1100;
+
+}
+.logo img {
+	height: 7rem;
+}
+nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+	margin-bottom: 0;
+}
+nav ul li{
+	margin-right: 2rem;
+}
+nav ul li a{
+	color: #FF5200;
+	font-size: 2rem;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #00263B;
+}
+.fa-bars{
+	font-size: 3rem;
+	color: #FF5200;
+	cursor: pointer;
+	display: none;
+}
+.fa-bars:hover{
+	color: #00263B;
+}
+/*********************************************** header section ends ****************************************/
+
+
+
+
+
+
+
+/*********************************************** home section starts ****************************************/
+#home{
+	min-height: 100vh;
+	width: 100vw;
+	background: linear-gradient(76.34deg, #ffffff, 52.45%, 
+		rgba(196, 196, 196, 0) 52.49%), url(images/home1.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	animation: background 10s alternate infinite;
+	border-bottom: 2px solid #FF5200;
+
+}
+#home .content{
+	position: relative;
+	padding-right: 30%;
+}
+#home .content h1{
+	font-size: 6rem;
+	color:#FF5200 ;
+}
+#home .content h2{
+	font-size: 5rem;
+	color: #FF5200;
+}
+#home .content h3{
+	font-size: 3rem;
+	color: #00263B;
+	margin: 1rem 0;
+}
+#home .content button{
+	outline: none;
+	border: none;
+	border-radius: 5rem;
+	background: #FF5200;
+	color: #fff;
+	cursor: pointer;
+	height: 4rem;
+	width: 18rem;
+	font-size: 2rem;
+	text-transform: capitalize;
+
+}
+#home .content button:hover{
+	background:#00263B ;
+}
+#home .content .icons{
+	position: absolute;
+	left: 20rem;
+	bottom: 8%;
+}
+#home .content .icons a{
+	height: 4rem;
+	width: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	background: #00263B;
+	border-radius: 5rem;
+	font-size: 1.7rem;
+	color: #fff;
+	margin-right: 1.5rem;
+	transition: .4s;
+	text-decoration: none;
+
+}
+#home .content .icons a:hover{
+	background: #FF5200;
+	transform: rotate(360deg);
+}
+/*********************************************** home section ends ****************************************/
+
+
+
+
+
+
+/*********************************************** course section starts ****************************************/
+#course{
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	width: 100vw;
+	background: #F7F7F7;
+
+
+}
+#course .heading{
+	font-size: 4rem;
+	padding-top:5rem ;
+	margin: 2rem 0;
+	color: #FF5200;
+	text-align: center;
+	position: relative;
+}
+#course .heading::after{
+	content: '';
+	position: absolute;
+	bottom: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	height: .3rem;
+	width: 60%;
+	border-radius: 5rem;
+	background: #00263B;
+}
+#course .box-container .box img{
+	height: 35%;
+	width: 35%;
+	transform: translateY(5rem);
+}
+#course .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	flex-wrap: wrap;
+}
+#course .box-container .box{
+	height: 25rem;
+	width: 30rem;
+	border-radius: 5rem;
+	box-shadow: 0 0 .3rem #00263B;
+	margin: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow:column ;
+	cursor: pointer;
+	overflow: hidden ;
+}
+#course .box-container .box img{
+	
+	transform: translateY(5rem);
+}
+#course .box-container .box p{
+	font-size: 1.3rem;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	transform: translateY(12rem);
+	padding:0 .4rem ;
+}
+#course .box-container .box:hover p{
+	opacity: 1;
+	transform: translateY(0rem);
+	transition: .4s;
+}
+#course .box-container .box:hover img{
+	height: 20%;
+	width: 20%;
+	transform: translateY(-2rem);
+	transition: .4s;
+}
+#course .box-container .box:hover{
+	background: #00263B;
+}
+/*********************************************** course section ends ****************************************/
+
+
+
+
+
+
+/*********************************************** service section starts ****************************************/
+#service{
+	display: grid;
+	place-iteems: center;
+	min-height: 100vh;
+	width: 100vw;
+	background: #00263B;
+}
+#service .heading{
+	font-size: 4rem;
+	padding-top:5rem ;
+	margin: 2rem 0;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+#service .heading::after{
+	content: '';
+	position: absolute;
+	bottom: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	height: .3rem;
+	width: 15%;
+	border-radius: 5rem;
+	background: #fff;
+}
+#service .box-container{
+	width: 90%;
+}
+#service .box-container .box{
+	background: #fff;
+	max-width: 60rem;
+	border-radius: .5rem;
+	box-shadow: 0 0 .3rem #00263B;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 4rem 2rem;
+	margin:2rem ;
+	clear: both;
+}
+#service .box-container .box img{
+	height: 7rem;
+	margin-right: 4rem;
+}
+#service .box-container .box .info {
+	padding-left: 2.5rem;
+	border-left: .4rem solid #FF5200;
+}
+#service .box-container .box .info h2{
+	font-size: 3rem;
+	color: #FF5200;
+}
+#service .box-container .box .info p{
+	font-size: 1.5rem;
+	color: #00263B;
+}
+#service .box-container .box:nth-child(2){
+	float: right;
+}
+/*********************************************** service section ends ****************************************/
+
+
+
+
+
+
+/*********************************************** testimonial section starts ****************************************/
+#testimonial{
+	display: grid;
+	place-iteems: center;
+	min-height: 100vh;
+	width: 100vw;
+	background: #333;
+}
+#testimonial .heading{
+	font-size: 4rem;
+	padding-top:5rem ;
+	margin: 2rem 0;
+	color: #fff;
+	text-align: center;
+	position: relative;
+
+}
+#testimonial .heading::after{
+	content: '';
+	position: absolute;
+	bottom: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	height: .3rem;
+	width: 25%;
+	border-radius: 5rem;
+	background: #fff;
+}
+
+#testimonial .box-container{
+	width: 90%;
+}
+#testimonial .box-container .box{
+	max-width: 60rem;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 2rem;
+	margin-left: 5rem;
+	padding-left: 6rem;
+	position: relative;
+	clear: both;
+}
+#testimonial .box-container .box img{
+	position: absolute;
+	top: 50%;
+	left: -9%;
+	transform: translateY(-50%);
+	height: 10rem;
+	width: 10rem;
+	border-radius: 10rem;
+	border: .5rem solid #FF5200;
+	box-shadow: 0 0 5rem #FF5200 inset;
+	object-fit: cover;
+}
+#testimonial .box-container .box:nth-child(even){
+	float: right;
+}
+#testimonial .box-container .box .info{
+	margin-top: -2.5rem;
+	margin: 2rem;
+	color: #00263B;
+	text-align: right;
+}
+#testimonial .box-container .box .info p{
+	font-size: 1.6rem;
+	padding: 1rem;
+	color: #333;
+}
+#testimonial .box-container .box .info p i{
+	padding: 1rem;
+	color: #FF5200;
+}
+#testimonial .box-container .box .info h2{
+	color: #FF5200 ;
+}
+/*********************************************** testimonial section ends ****************************************/
+
+
+
+
+
+
+/*********************************************** contact section starts ****************************************/
+#contact{
+	display: grid;
+	place-items: center;
+	background: linear-gradient(#00263B, #00263B), url(images/contact.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-blend-mode: screen;
+}
+#contact .heading{
+	font-size: 4rem;
+	padding-top:5rem ;
+	margin: 2rem 0;
+	color: #fff;
+	text-align: center;
+	position: relative;
+
+}
+#contact .heading::after{
+	content: '';
+	position: absolute;
+	bottom: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	height: .3rem;
+	width: 70%;
+	border-radius: 5rem;
+	background: #fff;
+}
+#contact form{
+	background: #fff;
+	padding-top: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	border-radius: .5rem;
+	box-shadow: 0 0 1rem #333;
+}
+#contact form .inputBox{
+	text-align: center;
+	position: relative;
+}
+#contact form .inputBox input,textarea{
+	outline: none;
+	padding: 0 1rem;
+	height: 4rem;
+	width: 90%;
+	border-radius: .5rem;
+	border: .2rem solid #333;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 2rem 0;
+}
+#contact form .inputBox:focus{
+	border-color: #00263B;
+}
+#contact form .inputBox textarea{
+	resize: none;
+	padding: 1rem;
+	height: 20rem;
+}
+input[type="submit"]{
+	border: none;
+	background: #00263B;
+	color: #fff;
+}
+input[type="submit"]:hover{
+	background: #333;
+}
+/*********************************************** contact section ends ****************************************/
+
+
+
+
+
+
+
+/*********************************************** footer section starts ****************************************/
+#footer{
+	width: 100%;
+	background: #333;
+}
+#footer h1{
+	text-align: center;
+	color: #fff;
+	font-size: 1.9rem;
+	padding: 2rem 0;
+	margin: 0;
+}
+#footer h1 span{
+	color: #FF5200;
+}
+/*********************************************** footer section ends ****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes background{
+	0%, 100%{
+    	background: linear-gradient(76.34deg, #ffffff, 52.45%, 
+	    rgba(196, 196, 196, 0) 52.49%), url(images/home1.jpg) no-repeat;
+	    background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	25%{
+    	background: linear-gradient(76.34deg, #ffffff, 52.45%, 
+	    rgba(196, 196, 196, 0) 52.49%), url(images/home2.jpg) no-repeat;
+	    background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	50%{
+    	background: linear-gradient(76.34deg, #ffffff, 52.45%, 
+	    rgba(196, 196, 196, 0) 52.49%), url(images/home3.jpg) no-repeat;
+	    background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	75%{
+    	background: linear-gradient(76.34deg, #ffffff, 52.45%, 
+	    rgba(196, 196, 196, 0) 52.49%), url(images/home4.jpg) no-repeat;
+	    background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+}
+
+
+
+
+/*********************************************** media queries starts ****************************************/
+@media (max-width: 768px){
+	html{
+		font-size: 50%;
+	}
+
+	#header .fa-bars{
+			display: block;
+	}
+	#header nav{
+		position: fixed;
+		top: -120%;
+		left: 0;
+		height: calc(100vh - 5rem);
+		width: 100vw;
+		background: #fff;
+
+	}
+	#header nav ul{
+		height: 100%;
+		flex-flow: column;
+		justify-content: center;
+	}
+	#header nav ul li{
+		margin: 2rem 0;
+	}
+	#header nav ul li a{
+		font-size: 3rem;
+	}
+	.nav-toggle{
+		top: 5.6rem;
+	}
+	#home{
+		animation: none;
+		background: linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)),url(images/home5.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	#home .content{
+		text-shadow: .1rem .1rem .3rem #00263B;
+	}
+	#home .content .icons{
+		left: 36%;
+		transform: translateX(-50%);
+	}
+}  
+
+
+@media (max-width: 500px){
+	#service .box-container .box{
+		flex-flow: column;
+		padding: 1.5rem;
+	}
+	#service .box-container .box .info{
+		padding-left: 0;
+		padding-top: 3rem;
+		border: none;
+		text-align: center;
+	}
+	#service .box-container .box .info p{
+		padding: 1rem;
+	}
+	#testimonial .box-container .box{
+		padding: .5rem;
+		margin-top: 13rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#testimonial .box-container .box img{
+		left: 50%;
+		transform: translateX(-50%);
+		top: -30px;
+		height: 15rem;
+		width: 15rem;
+	}
+	#testimonial .box-container .box .info{
+		text-align: center;
+	}
+	#testimonial .box-container .box .info p{
+		padding-top: 9rem;
+	}
+	#testimonial .box-container .box .info h2{
+		text-align: center;
+		margin: 1.5rem;
+	}
+	#testimonial .box-container .box:nth-child(even){
+		float: none;
+	}
+}
+/*********************************************** media queries ends ****************************************/
